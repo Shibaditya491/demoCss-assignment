@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    cursor: pointer; 
+    font-weight: 900;
+    color: rgb(127, 127, 127);   
+}
+
+.logo{
+    color: rgb(52, 52, 52);
+    cursor: pointer;
+}
+
+.user-btn{
+    background-color: rgb(133, 214, 255);
+    color: rgb(3, 112, 255);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.user-btn:hover{
+    background-color: rgb(199, 236, 255);
+    color: rgb(0, 84, 193);
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left{
+    flex-basis: 30%;
+
+}
+
+.right{
+    flex-basis: 40%;
+}
+
+.left> h2{
+    margin-bottom: 45px;
+    font-size: 3.2rem;
+    cursor: pointer;
+    color: rgb(52, 52, 52);
+}
+
+.left span{
+    color: rgb(0, 140, 255);
+}
+
+.left p{
+    color: rgb(151, 151, 151);
+    font-size: 0.85rem;
+    margin-bottom: 45px ;
+
+}
+
+.booking-btn{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 140, 255);
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+.booking-btn:hover{
+    background-color: rgb(99, 203, 255);
+    color: rgb(0, 110, 255);
+    cursor: pointer;
+}
+
+.right img{
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+@media(max-width: 1024px){
+    header{
+        flex-direction: column;
+        gap: 30px;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left{
+        width: 65vW;
+        margin: 25px;
+    }
+
+    .right{    
+        margin: 25px;
+    }
+
+    .right img{
+        width: 75vw;
+        height: auto;
+    }
+}
+
